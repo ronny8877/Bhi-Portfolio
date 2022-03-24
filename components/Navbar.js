@@ -3,31 +3,34 @@ let bhiNavBar = document.createElement("template");
 
 bhiNavBar.innerHTML = `
  <style>
-        .navbar{
-            background-color: #1d1d1d;
-            color: #fff;
-            padding: 10px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0px 0px 10px #000;
-        }
-        .navbar a{
-            color: #fff;
-            text-decoration: none;
-        }
-        .navbar a:hover{
-            text-decoration: underline;
-        }
-        </style>
-        <div class="navbar">
-            <a href="#">Home</a>
-            <a href="#">Socials</a>
-            <a href="#">Select Bhi</a>
-        </div>
+    :host {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60%;
+        border-radius: 0 5rem 0 0;
+        height: 60px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+    }
+</style>
+<nav class="container">
+	<div class="tabs">
+		<input type="radio" id="radio-1" name="tabs" checked />
+		<label class="tab" for="radio-1">Home</label>
+		<input type="radio" id="radio-2" name="tabs" checked />
+		<label class="tab" for="radio-2">About</label>
+		<input type="radio" id="radio-3" name="tabs" checked />
+		<label class="tab" for="radio-3">Contact Us</label>
+		<span class="glider"></span>
+	</div>
+</nav>
+
 `;
 class Navbar extends HTMLElement {
 	constructor() {
