@@ -2,14 +2,22 @@
     background-color: #FFDDEE;
 }
 
+
 .menu {
     display: inline-block;
     cursor: pointer;
-    float: right;
     padding: 2px 10px;
     background-color: #F473B9;
     padding: 20px;
     border-radius: 50%;
+    position: relative;
+  }
+
+  .BarMenu{
+    list-style: none;
+    display: none;
+    padding: 10px 100px;
+    position : absolute
   }
   
   .bar1, .bar2, .bar3 {
@@ -18,11 +26,13 @@
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;
+   
   }
   
   .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
+
   }
   
   .change .bar2 {opacity: 0;}
