@@ -8,14 +8,14 @@ function OpenMenu(){
 
   if( MenuValue == 0){
     document.getElementById("BarMenu").style="display: block"
-    console.log(MenuValue)
     MenuValue++
+    
   }
   else
   {
     document.getElementById("BarMenu").style="display: hidden"
-    console.log(MenuValue)
     MenuValue--
+    
   }
 };
 
