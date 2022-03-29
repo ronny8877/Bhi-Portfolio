@@ -13,38 +13,124 @@
     <title>Rishab Portfolio</title>
   </head>
   <body>
-    <div class="FirstComponent" id="FirstComponent">
-      <div class="menu" id="Menu" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <div class="BarMenu" id="BarMenu">
-          <li><a>Home</a></li>
-          <li><a>Profile</a></li>
-          <li><a>Contact Me</a></li>
-          <li><a>Projects</a></li>
+    <div class="header">
+      <!--Content before waves-->
+      <div class="inner-header flex">
+        <!--Just the logo.. Don't mind this-->
+        <svg
+          version="1.1"
+          class="logo"
+          baseProfile="tiny"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 500 500"
+          xml:space="preserve"
+        >
+          <path
+            fill="#FFFFFF"
+            stroke="#000000"
+            stroke-width="10"
+            stroke-miterlimit="10"
+            d="M57,283"
+          />
+          <g>
+            <path
+              fill="#fff"
+              d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
+  C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
+  c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z"
+            />
+          </g>
+        </svg>
+        <div class="FirstComponent" id="FirstComponent">
+          <div class="menu" id="Menu" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div class="BarMenu" id="BarMenu">
+              <li><a>Home</a></li>
+              <li><a>Profile</a></li>
+              <li><a>Contact Me</a></li>
+              <li><a>Projects</a></li>
+            </div>
+          </div>
+          <div class="HeaderText" style="text-align: center; padding-top: 5%">
+            <h1>My Portfolio</h1>
+            <p style="color: white">
+              A small gallary of recent project chosen by me. I've done them all together with amazing people from my friend list.<br>
+              It's only a drop in the ocean compared to the entire list.<br>
+            </p>
+          </div>
+          <div class="wellcome text-center">
+            <img src="./assest/panda.png" class="panda" id="panda" />
+            <img src="./assest/penguin.png" class="penguin" />
+            <img src="./assest/hacker.png" class="hacker" />
+          </div>
+
+          <!-- <div class="animals">
+              <img src="./sun.png" class="sun">
+              <img src="./bear.png" class="bear">
+              <img src="./dolphin.png" class="dolphin">
+              <img src="./gorilla.png" class="gorilla">
+              <img src="./nymph.png" class="nymph">
+              
+            </div> -->
         </div>
       </div>
-      
 
-      <div class="wellcome text-center">
-        <img src="./assest/panda.png" class="panda" id="panda" />
-        <img src="./assest/penguin.png" class="penguin" />
-        <img src="./assest/hacker.png" class="hacker" />
+      <!--Waves Container-->
+      <div>
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(255,255,255,0.7"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(255,255,255,0.5)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(255,255,255,0.3)"
+            />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
       </div>
-      
-      <!-- <div class="animals">
-          <img src="./sun.png" class="sun">
-          <img src="./bear.png" class="bear">
-          <img src="./dolphin.png" class="dolphin">
-          <img src="./gorilla.png" class="gorilla">
-          <img src="./nymph.png" class="nymph">
-          
-        </div> -->
     </div>
+
+
+
+
+
+
     <div class="about">
       <div class="row">
         <div class="col text-center">
+          <img src="./assest/rainbow.png" class="Rainbow" />
           <img src="./assest/man.png" class="man" />
         </div>
         <div class="col m-auto">
@@ -56,16 +142,18 @@
           <p>
             I’ve always been someone who has both a creative and a logical
             side.<br />
-            When I discovered web design in college, I realized it would be
-            the perfect fit.<br />
-            I could use my creative side to design and my logical side to
-            code. As a bonus,<br />
+            When I discovered web design in college, I realized it would be the
+            perfect fit.<br />
+            I could use my creative side to design and my logical side to code.
+            As a bonus,<br />
             being both designer and developer allows me to make sure no detail
             is lost in translation.
           </p>
         </div>
       </div>
     </div>
+
+    
   </body>
   <script src="./assest/RishPort.Js"></script>
 </html>
