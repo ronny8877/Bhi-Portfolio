@@ -1,8 +1,6 @@
 function myFunction(x) {
     x.classList.toggle("change");
   }
-
-
   
 function OpenMenu(){
 
@@ -21,3 +19,6 @@ function OpenMenu(){
 
    document.getElementById("Menu").addEventListener("click",OpenMenu)
    var MenuValue = 0;
+
+
+  

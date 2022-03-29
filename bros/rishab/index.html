@@ -9,6 +9,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="./assest/RishPort.css" rel="stylesheet" type="text/css" />
     <title>Rishab Portfolio</title>
   </head>
@@ -16,35 +18,6 @@
     <div class="header">
       <!--Content before waves-->
       <div class="inner-header flex">
-        <!--Just the logo.. Don't mind this-->
-        <svg
-          version="1.1"
-          class="logo"
-          baseProfile="tiny"
-          id="Layer_1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          viewBox="0 0 500 500"
-          xml:space="preserve"
-        >
-          <path
-            fill="#FFFFFF"
-            stroke="#000000"
-            stroke-width="10"
-            stroke-miterlimit="10"
-            d="M57,283"
-          />
-          <g>
-            <path
-              fill="#fff"
-              d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
-  C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
-  c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z"
-            />
-          </g>
-        </svg>
         <div class="FirstComponent" id="FirstComponent">
           <div class="menu" id="Menu" onclick="myFunction(this)">
             <div class="bar1"></div>
@@ -60,8 +33,9 @@
           <div class="HeaderText" style="text-align: center; padding-top: 5%">
             <h1>My Portfolio</h1>
             <p style="color: white">
-              A small gallary of recent project chosen by me. I've done them all together with amazing people from my friend list.<br>
-              It's only a drop in the ocean compared to the entire list.<br>
+              A small gallary of recent project chosen by me. I've done them all
+              together with amazing people from my friend list.<br />
+              It's only a drop in the ocean compared to the entire list.<br />
             </p>
           </div>
           <div class="wellcome text-center">
@@ -122,20 +96,18 @@
       </div>
     </div>
 
-
-
-
-
-
     <div class="about">
       <div class="row">
         <div class="col text-center">
-          <img src="./assest/rainbow.png" class="Rainbow" />
-          <img src="./assest/man.png" class="man" />
+          <div data-aos="zoom-in-up">
+            <img src="./assest/rainbow.png" class="Rainbow" />
+            <img src="./assest/man.png" class="man" />
+          </div>
         </div>
         <div class="col m-auto">
+          <div data-aos="zoom-in-up">
           <h3>
-            Hey! My name is Rishab.<br />
+            Hey! My name is <span>Rishab</span>.<br />
             I am a web & font<br />
             designer based in Dehradun, Uttarakhand
           </h3>
@@ -147,13 +119,43 @@
             I could use my creative side to design and my logical side to code.
             As a bonus,<br />
             being both designer and developer allows me to make sure no detail
-            is lost in translation.
+            is lost in translation.<br />
+            <br />
+            I'm a student of Beachlor Of Science In Information Technology<br />
+            From<span> Graphic Era Hill University, Dehradun Uttarakhand</span>.
           </p>
+        </div>
         </div>
       </div>
     </div>
 
-    
+    <!-- Contact ME -->
+    <div class="ContactMe">
+    <H1>Contact Me</H1>
+    <p>I'm Intrested in Freelance opportunities. However, if you have<br>
+    other request or questions, don't hesitate to use the form.<br>
+    </p>
+    <form>
+      <div class="d" style="display: inline-flex">
+        <input type="Name" class="form-control" id="InputName" placeholder="NAME" style="width:300px">
+        <input type="Email" class="form-control" id="InputEmail1" placeholder="EMAIL"  style="width:300px">
+      </div>
+      <div class="d">
+        <input type="Text" class="form-control" id="InputSubject" placeholder="Subject" style="width:600px">
+      </div>
+      <div class="d">
+        <input type="Text" class="form-control" id="InputMessage" placeholder="Message" style="width:600px; height:100px;">
+      </div>
+      <div class="d">
+        <input type="Submit" class="form-control" id="Submit" style="width:100px">
+      </div>
+    </form>
+  </div>
+
   </body>
   <script src="./assest/RishPort.Js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
