@@ -10,7 +10,16 @@
 </head>
 
 <body>
-  <nav class="Navigation-Bar">
+
+
+  <nav class="Navigation-Bar" id="navigationBar">
+    <div class="container Navigation-Icon" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  <div class="NavigatonList">
+
     <a href="#" class="svg-link">
       <svg xmlns="http://www.w3.org/2000/svg">
         <rect class="outline" />
@@ -35,7 +44,13 @@
         <span>Contact Me</span>
       </svg>
     </a>
+  </div>
   </nav>
 </body>
-
+<script>
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
+  </script>
+<script src="./assest/index.js"></script>
 </html>
