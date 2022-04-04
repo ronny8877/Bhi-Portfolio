@@ -20,5 +20,7 @@ function OpenMenu(){
    document.getElementById("Menu").addEventListener("click",OpenMenu)
    var MenuValue = 0;
 
-
-  
+   document.getElementById("Submit").addEventListener("click",Submit)
+  function Submit(){
+    alert("mail sent");
+  }

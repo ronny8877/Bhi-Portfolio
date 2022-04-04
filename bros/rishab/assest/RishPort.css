@@ -2,6 +2,13 @@
 .FirstComponent{
   padding-top:100px;
 }
+
+
+.ContactMe{
+  background-color: #56BBF1;
+  color: white; 
+  padding: 10px 100px;
+}
 .menu {
     display: inline-block;
     cursor: pointer;
