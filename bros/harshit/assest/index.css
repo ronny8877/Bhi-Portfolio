@@ -1,0 +1,49 @@
+body{   
+    padding-top:5px;
+    display:grid;
+    place-items:center;
+}
+
+.Navigation-Bar{
+    display:flex;
+}
+.svg-link{
+    color:#444;
+    font-family:helvetica,sans-serif;
+    text-decoration:none;
+    text-transform:uppercase;
+    width:150px;
+    height:40px;
+    display:grid;
+    place-items:center;
+    position:relative;
+    margin: 0px 10px;
+    
+}
+
+.svg-link svg{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+.outline{
+    width:100%;
+    height:100%;
+    stroke-width:4px;
+    stroke:#4700d8;
+    fill:transparent;
+    stroke-dasharray:59 235;
+    stroke-dashoffset:-235;
+    transition:all 0.9s ease-in-out ;
+}
+
+.svg-link:hover{
+    color:#4700d8;
+}
+
+.svg-link:hover .outline{
+    stroke-width:2px;
+    stroke-dashoffset:0;
+    stroke-dasharray:379;
+}
