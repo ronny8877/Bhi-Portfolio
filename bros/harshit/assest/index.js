@@ -1,17 +1,18 @@
+function myFunction(x) {
+    x.classList.toggle("change");
+  }
 
 function Menu(){
     
     if(display == 0){
-       document.getElementById("NavigationList").style.display.visibility="hidden";
+        document.getElementById("NavigationList").style="visibility:visible";
         display++;
-        console.log("hidden")
     }
     else{
-        document.getElementById("NavigationList").style.display.visibility="none";
+        document.getElementById("NavigationList").style=" visibility:hidden";
         display--;
-        console.log("none")
     }
 }
-
-document.getElementById("NavigationBar").addEventListener("click",Menu);
-let display = 0;
+document.getElementById("NavigationList").style=" visibility:hidden";
+document.getElementById("navigationBar").addEventListener("click", Menu)
+var display = 0;

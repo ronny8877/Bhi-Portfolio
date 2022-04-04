@@ -3,7 +3,12 @@ body{
     display:grid;
 }
 
-.Navigaton-List{
+.Navigation-Bar{
+    display:flex;
+    padding: 5px 5px;
+}
+
+.Navigation-List{
     visibility:hidden;
     display: flex;
 }
@@ -32,20 +37,19 @@ body{
     transform: rotate(45deg) translate(-8px, -8px);
   }
 
-.Navigation-Bar{
-    display:flex;
-}
+
 .svg-link{
     color:#444;
     font-family:helvetica,sans-serif;
     text-decoration:none;
+    font-weight: bold;
     text-transform:uppercase;
     width:150px;
     height:40px;
     display:grid;
     place-items:center;
     position:relative;
-    margin: 0px 10px;
+    margin: 0px 100px;
     
 }
 
@@ -63,7 +67,7 @@ body{
     fill:transparent;
     stroke-dasharray:59 235;
     stroke-dashoffset:-235;
-    transition:all 0.9s ease-in-out ;
+    transition:all 0.5s;
 }
 
 .svg-link:hover{
